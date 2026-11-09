@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Studying how to distribute regulated nitrogen to a spacecraft’s cold gas thrusters, alongside the propulsion team’s nozzle trade study.">
+  <meta name="theme-color" content="#0c1321">
+  <title>Manifold / Thruster Study | Ethan Osuna</title>
+  <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Ethan Osuna, home"><img src="/assets/mark.svg" alt="" width="33" height="33"><span>Ethan Osuna</span></a>
+      <nav aria-label="Main navigation"><a href="/#work">Work</a><a href="/#about">About</a></nav>
+      <a class="contact" href="mailto:esuna1705@gmail.com">Contact <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="project-hero wrap" aria-labelledby="project-title">
+      <a class="back-link" href="/#work"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12H4m7-7-7 7 7 7"/></svg> All projects</a>
+      <div class="project-intro">
+        <div><div class="micro project-kicker"><b>02</b> / UCI Drag Sail Deorbit Project</div>
+          <h1 id="project-title">Manifold / Thruster Study</h1><p class="project-lede">Our propulsion team is studying a nitrogen cold gas system for spacecraft attitude adjustments. I work on the manifold that distributes regulated gas to the thruster branches.</p><ul class="tags" aria-label="Tools and topics"><li>Propulsion</li><li>Trade studies</li><li>SolidWorks</li></ul></div>
+        <aside class="project-specs" aria-label="Project facts">
+          <div class="spec-heading"><span class="status ongoing"><i></i>In progress</span><span class="micro">Sep 2026 – present</span></div>
+          <dl><div><dt class="micro">My role</dt><dd>Manifold design and trade studies</dd></div><div><dt class="micro">Model</dt><dd>Nitrogen cold gas propulsion</dd></div><div><dt class="micro">Nozzle target</dt><dd>75 mN for the CFD candidate</dd></div></dl>
+        </aside>
+      </div>
+    </section>
+    <section class="story wrap" aria-label="Project approach"><article><p class="micro story-num">01 /</p><h2>Manifold design</h2><p>I’m comparing off-the-shelf and custom manifolds, with attention to pressure ratings and how much flow each branch needs when multiple valves open. One trade is whether to use a pressure relief device downstream of the regulator or rate the downstream components for exposure to full storage pressure. The final architecture and verification plan are still in development.</p></article><article><p class="micro story-num">02 /</p><h2>Nozzle sizing trade study</h2><p>The propulsion team varied the exit-to-throat area ratio across several thrust targets using a modeled 20 bar nitrogen inlet and vacuum exhaust. Increasing the ratio improved predicted specific impulse, with diminishing gains as the nozzle grew wider and longer. Comparing a conical profile with a shorter bell profile helped put those efficiency gains in the context of available space.</p></article><article><p class="micro story-num">03 /</p><h2>What the simulation shows</h2><p>The team used SolidWorks Flow Simulation on a conical nozzle candidate labeled for a 75 mN design target. The model applied mass flow at the inlet and an environment pressure condition at the exit. The Mach contour predicts acceleration through the throat and supersonic flow downstream. This is a team simulation; the design target is not a measured thrust result.</p></article></section>
+    
+    <section class="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-index micro"><b>02</b><span></span> Project images</div>
+        <h2 id="gallery-title">Documentation</h2>
+        <div class="gallery-grid">
+        <figure class="gallery-item"><a class="zoom-link" href="https://ethan-osuna-engineering.cappednashi.chatgpt.site/assets/nozzle-mach.webp" aria-label="Enlarge figure 1: Team CFD result · Predicted Mach number through the conical nozzle candidate."><img loading="lazy" src="https://ethan-osuna-engineering.cappednashi.chatgpt.site/assets/nozzle-mach.webp" alt="Team CFD result · Predicted Mach number through the conical nozzle candidate."><span class="expand-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4H4v4m12-4h4v4m-4 12h4v-4M8 20H4v-4"/></svg></span></a>
+           <figcaption><b class="micro">FIG. 01</b><span>Team CFD result · Predicted Mach number through the conical nozzle candidate.</span></figcaption></figure><figure class="gallery-item"><a class="zoom-link" href="https://ethan-osuna-engineering.cappednashi.chatgpt.site/assets/nozzle-boundary-conditions.webp" aria-label="Enlarge figure 2: Boundary conditions · Mass flow at the inlet and environment pressure at the exit."><img loading="lazy" src="https://ethan-osuna-engineering.cappednashi.chatgpt.site/assets/nozzle-boundary-conditions.webp" alt="Boundary conditions · Mass flow at the inlet and environment pressure at the exit."><span class="expand-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4H4v4m12-4h4v4m-4 12h4v-4M8 20H4v-4"/></svg></span></a>
+           <figcaption><b class="micro">FIG. 02</b><span>Boundary conditions · Mass flow at the inlet and environment pressure at the exit.</span></figcaption></figure><figure class="gallery-item"><a class="zoom-link" href="https://ethan-osuna-engineering.cappednashi.chatgpt.site/assets/nozzle-mesh.webp" aria-label="Enlarge figure 3: Mesh refinement · Smaller cells around the throat and exit. Colors show refinement level."><img loading="lazy" src="https://ethan-osuna-engineering.cappednashi.chatgpt.site/assets/nozzle-mesh.webp" alt="Mesh refinement · Smaller cells around the throat and exit. Colors show refinement level."><span class="expand-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4H4v4m12-4h4v4m-4 12h4v-4M8 20H4v-4"/></svg></span></a>
+           <figcaption><b class="micro">FIG. 03</b><span>Mesh refinement · Smaller cells around the throat and exit. Colors show refinement level.</span></figcaption></figure><figure class="gallery-item"><a class="zoom-link" href="https://ethan-osuna-engineering.cappednashi.chatgpt.site/assets/nozzle-sweep.webp" aria-label="Enlarge figure 4: Team sizing sweep · Predicted nitrogen nozzle performance versus expansion ratio."><img loading="lazy" src="https://ethan-osuna-engineering.cappednashi.chatgpt.site/assets/nozzle-sweep.webp" alt="Team sizing sweep · Predicted nitrogen nozzle performance versus expansion ratio."><span class="expand-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4H4v4m12-4h4v4m-4 12h4v-4M8 20H4v-4"/></svg></span></a>
+           <figcaption><b class="micro">FIG. 04</b><span>Team sizing sweep · Predicted nitrogen nozzle performance versus expansion ratio.</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <div class="wrap next-project"><a href="/projects/l1-rocket/"><span class="micro">Next project</span><strong>L1 Rocket</strong><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h17m-7-7 7 7-7 7"/></svg></a></div>
+    <dialog class="lightbox" aria-label="Enlarged project image"><div class="lightbox-inner"><button type="button" class="lightbox-close" aria-label="Close image"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 6 12 12M18 6 6 18"/></svg></button><img alt=""><p></p></div></dialog>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><span>Ethan Osuna <span class="footer-divider">/</span> Engineering Portfolio</span><a href="#main">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>

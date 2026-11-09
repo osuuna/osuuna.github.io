@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Designed a sensor payload to study air quality at different heights above Mt. SAC, with onboard logging and a LoRa link.">
+  <meta name="theme-color" content="#0c1321">
+  <title>Tethered Weather Balloon | Ethan Osuna</title>
+  <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Ethan Osuna, home"><img src="/assets/mark.svg" alt="" width="33" height="33"><span>Ethan Osuna</span></a>
+      <nav aria-label="Main navigation"><a href="/#work">Work</a><a href="/#about">About</a></nav>
+      <a class="contact" href="mailto:esuna1705@gmail.com">Contact <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="project-hero wrap" aria-labelledby="project-title">
+      <a class="back-link" href="/#work"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12H4m7-7-7 7 7 7"/></svg> All projects</a>
+      <div class="project-intro">
+        <div><div class="micro project-kicker"><b>04</b> / Air quality instrumentation</div>
+          <h1 id="project-title">Tethered Weather Balloon</h1><p class="project-lede">I led a team building a tethered balloon payload to profile how air quality changes with height above Mt. San Antonio College in Walnut, California. The project combined mechanical packaging, embedded electronics, and ground operations.</p><ul class="tags" aria-label="Tools and topics"><li>KiCad</li><li>Raspberry Pi</li><li>LoRa</li></ul></div>
+        <aside class="project-specs" aria-label="Project facts">
+          <div class="spec-heading"><span class="status"><i></i>Prototype built</span><span class="micro">Feb – Jun 2026</span></div>
+          <dl><div><dt class="micro">My role</dt><dd>Team lead and KiCad schematic</dd></div><div><dt class="micro">Enclosure</dt><dd>3D printed ASA</dd></div><div><dt class="micro">Data paths</dt><dd>Onboard CSV and LoRa telemetry</dd></div></dl>
+        </aside>
+      </div>
+    </section>
+    <section class="story wrap" aria-label="Project approach"><article><p class="micro story-num">01 /</p><h2>Payload enclosure</h2><p>We chose ASA for outdoor UV and temperature exposure. The enclosure made room for the sensor breadboard, with a louvered panel and a dedicated opening for the LoRa antenna. We estimated balloon lift from payload mass and used the expected loads to evaluate the eye bolt and select a tether within our length and budget limits. A manual winch was planned for recovery.</p></article><article><p class="micro story-num">02 /</p><h2>Sensing and logging</h2><p>I drew the KiCad schematic for the Pico, Pi Zero 2 W, radio, camera, and sensor connections. The breadboard integrated the BME280, MiCS-6814, MQ-131, and PMS5003 for atmospheric and air quality measurements. Python and MicroPython handled sensor acquisition; the Pi logged readings to a CSV on its SD card. LoRa was intended to send a second copy to the ground if the payload could not be recovered.</p></article><article><p class="micro story-num">03 /</p><h2>Field outcome</h2><p>The balloon burst during inflation after contact with a hot metal bar, so the payload never flew and we collected no altitude profile. A loose camera ribbon also prevented planned footage. For a repeat attempt, I would isolate the balloon from hot surfaces, secure the camera connector, and verify recording and telemetry on flight power before inflation.</p></article></section>
+    
+    <section class="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-index micro"><b>04</b><span></span> Project images</div>
+        <h2 id="gallery-title">Documentation</h2>
+        <div class="gallery-grid">
+        <figure class="gallery-item"><a class="zoom-link" href="/assets/balloon-prototype.webp" aria-label="Enlarge figure 1: Prototype · Breadboard, sensor wiring, and camera ribbon inside the printed enclosure."><img loading="lazy" src="/assets/balloon-prototype.webp" alt="Prototype · Breadboard, sensor wiring, and camera ribbon inside the printed enclosure."><span class="expand-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4H4v4m12-4h4v4m-4 12h4v-4M8 20H4v-4"/></svg></span></a>
+           <figcaption><b class="micro">FIG. 01</b><span>Prototype · Breadboard, sensor wiring, and camera ribbon inside the printed enclosure.</span></figcaption></figure><figure class="gallery-item"><a class="zoom-link" href="/assets/balloon-drawing.webp" aria-label="Enlarge figure 2: Dimensioned payload enclosure drawing with orthographic and isometric views."><img loading="lazy" src="/assets/balloon-drawing.webp" alt="Dimensioned payload enclosure drawing with orthographic and isometric views."><span class="expand-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4H4v4m12-4h4v4m-4 12h4v-4M8 20H4v-4"/></svg></span></a>
+           <figcaption><b class="micro">FIG. 02</b><span>Dimensioned payload enclosure drawing with orthographic and isometric views.</span></figcaption></figure><figure class="gallery-item"><a class="zoom-link" href="/assets/balloon-schematic.webp" aria-label="Enlarge figure 3: KiCad schematic · Flight computers, camera, LoRa radio, and sensor connections."><img loading="lazy" src="/assets/balloon-schematic.webp" alt="KiCad schematic · Flight computers, camera, LoRa radio, and sensor connections."><span class="expand-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4H4v4m12-4h4v4m-4 12h4v-4M8 20H4v-4"/></svg></span></a>
+           <figcaption><b class="micro">FIG. 03</b><span>KiCad schematic · Flight computers, camera, LoRa radio, and sensor connections.</span></figcaption></figure><figure class="gallery-item"><a class="zoom-link" href="/assets/balloon-cad-louvered.webp" aria-label="Enlarge figure 4: Enclosure CAD · Louvered panel."><img loading="lazy" src="/assets/balloon-cad-louvered.webp" alt="Enclosure CAD · Louvered panel."><span class="expand-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4H4v4m12-4h4v4m-4 12h4v-4M8 20H4v-4"/></svg></span></a>
+           <figcaption><b class="micro">FIG. 04</b><span>Enclosure CAD · Louvered panel.</span></figcaption></figure><figure class="gallery-item"><a class="zoom-link" href="/assets/balloon-cad-front.webp" aria-label="Enlarge figure 5: Enclosure CAD · Side openings and lid."><img loading="lazy" src="/assets/balloon-cad-front.webp" alt="Enclosure CAD · Side openings and lid."><span class="expand-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4H4v4m12-4h4v4m-4 12h4v-4M8 20H4v-4"/></svg></span></a>
+           <figcaption><b class="micro">FIG. 05</b><span>Enclosure CAD · Side openings and lid.</span></figcaption></figure><figure class="gallery-item"><a class="zoom-link" href="/assets/balloon-cad-interior.webp" aria-label="Enlarge figure 6: Enclosure CAD · Interior packaging."><img loading="lazy" src="/assets/balloon-cad-interior.webp" alt="Enclosure CAD · Interior packaging."><span class="expand-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4H4v4m12-4h4v4m-4 12h4v-4M8 20H4v-4"/></svg></span></a>
+           <figcaption><b class="micro">FIG. 06</b><span>Enclosure CAD · Interior packaging.</span></figcaption></figure><figure class="gallery-item"><a class="zoom-link" href="/assets/balloon-inflation.webp" aria-label="Enlarge figure 7: Field preparation · Team assembling the payload and inflating the tethered balloon."><img loading="lazy" src="/assets/balloon-inflation.webp" alt="Field preparation · Team assembling the payload and inflating the tethered balloon."><span class="expand-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4H4v4m12-4h4v4m-4 12h4v-4M8 20H4v-4"/></svg></span></a>
+           <figcaption><b class="micro">FIG. 07</b><span>Field preparation · Team assembling the payload and inflating the tethered balloon.</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <div class="wrap next-project"><a href="/projects/l2-rocket/"><span class="micro">Next project</span><strong>L2 Rocket</strong><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h17m-7-7 7 7-7 7"/></svg></a></div>
+    <dialog class="lightbox" aria-label="Enlarged project image"><div class="lightbox-inner"><button type="button" class="lightbox-close" aria-label="Close image"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 6 12 12M18 6 6 18"/></svg></button><img alt=""><p></p></div></dialog>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><span>Ethan Osuna <span class="footer-divider">/</span> Engineering Portfolio</span><a href="#main">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>

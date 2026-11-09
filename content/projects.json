@@ -1,0 +1,183 @@
+[
+  {
+    "slug": "magnacut-folding-knife",
+    "title": "MagnaCut Folding Knife",
+    "spotlight": {"value": "63 HRC", "label": "Average of three tests"},
+    "eyebrow": "Mechanical design and fabrication",
+    "status": "Built and tested",
+    "date": "Mar – Jun 2026",
+    "categories": ["Manufacturing"],
+    "tags": ["SolidWorks", "Heat treatment", "Rockwell testing"],
+    "cover": "knife-finished.webp",
+    "coverAlt": "Finished folding knife with its steel blade open and wooden handle visible",
+    "summary": "Designed and fabricated a folding knife with a CPM MagnaCut blade that averaged 63 HRC across three tests.",
+    "lede": "Our team designed and fabricated a back-lock folding knife for camping use. We chose CPM MagnaCut and selected a heat treatment intended to balance blade hardness with toughness.",
+    "facts": [["Blade", "CPM MagnaCut steel"], ["Hardness target", "62–64 HRC"], ["Measured result", "63 HRC average · 3 tests"]],
+    "sections": [
+      ["Mechanism and fabrication", "We modeled the knife in SolidWorks in both open and closed positions, then fabricated the blade and assembled the folding mechanism. We built a dedicated bevel jig to hold the blade during grinding on the belt sander."],
+      ["Heat treatment and verification", "We planned the heat treatment with a thermal history plot and used stainless tool wrap to limit oxidation and decarburization during hardening. The sequence included quenching, cold treatment, and two tempering cycles. After processing, three Rockwell C measurements averaged 63 HRC, within the team’s target range."]
+    ],
+    "gallery": [
+      ["knife-finished.webp", "Fabricated folding knife with its CPM MagnaCut blade extended."],
+      ["knife-cad-open.webp", "CAD assembly · Blade open."],
+      ["knife-cad-closed.webp", "CAD assembly · Blade closed."],
+      ["knife-bevel-jig.webp", "Team-built jig used to hold the blade for bevel grinding."],
+      ["knife-cold-treatment.webp", "Blade during the cold treatment stage."],
+      ["knife-thermal-history.webp", "Planned thermal history for the MagnaCut blade."],
+      ["knife-hardness.webp", "Rockwell test setup · Three measurements averaged 63 HRC."]
+    ]
+  },
+  {
+    "slug": "manifold-thruster-study",
+    "title": "Manifold / Thruster Study",
+    "eyebrow": "UCI Drag Sail Deorbit Project",
+    "status": "In progress",
+    "date": "Sep 2026 – present",
+    "categories": ["Aerospace"],
+    "tags": ["Propulsion", "Trade studies", "SolidWorks"],
+    "cover": "nozzle-mach.webp",
+    "coverMode": "diagram",
+    "coverAlt": "Simulated Mach number contour through a converging-diverging nozzle",
+    "summary": "Studying how to distribute regulated nitrogen to a spacecraft’s cold gas thrusters, alongside the propulsion team’s nozzle trade study.",
+    "lede": "Our propulsion team is studying a nitrogen cold gas system for spacecraft attitude adjustments. I work on the manifold that distributes regulated gas to the thruster branches.",
+    "facts": [["My role", "Manifold design and trade studies"], ["Model", "Nitrogen cold gas propulsion"], ["Nozzle target", "75 mN for the CFD candidate"]],
+    "sections": [
+      ["Manifold design", "I’m comparing off-the-shelf and custom manifolds, with attention to pressure ratings and how much flow each branch needs when multiple valves open. One trade is whether to use a pressure relief device downstream of the regulator or rate the downstream components for exposure to full storage pressure. The final architecture and verification plan are still in development."],
+      ["Nozzle sizing trade study", "The propulsion team varied the exit-to-throat area ratio across several thrust targets using a modeled 20 bar nitrogen inlet and vacuum exhaust. Increasing the ratio improved predicted specific impulse, with diminishing gains as the nozzle grew wider and longer. Comparing a conical profile with a shorter bell profile helped put those efficiency gains in the context of available space."],
+      ["What the simulation shows", "The team used SolidWorks Flow Simulation on a conical nozzle candidate labeled for a 75 mN design target. The model applied mass flow at the inlet and an environment pressure condition at the exit. The Mach contour predicts acceleration through the throat and supersonic flow downstream. This is a team simulation; the design target is not a measured thrust result."]
+    ],
+    "gallery": [
+      ["nozzle-mach.webp", "Team CFD result · Predicted Mach number through the conical nozzle candidate."],
+      ["nozzle-boundary-conditions.webp", "Boundary conditions · Mass flow at the inlet and environment pressure at the exit."],
+      ["nozzle-mesh.webp", "Mesh refinement · Smaller cells around the throat and exit. Colors show refinement level."],
+      ["nozzle-sweep.webp", "Team sizing sweep · Predicted nitrogen nozzle performance versus expansion ratio."]
+    ]
+  },
+  {
+    "slug": "l1-rocket",
+    "title": "L1 Rocket",
+    "eyebrow": "High-power rocketry",
+    "status": "Flight documented",
+    "date": "Level 1 certification project",
+    "categories": ["Aerospace", "Manufacturing"],
+    "tags": ["OpenRocket", "CAD", "Fabrication"],
+    "cover": "l1-rocket-cover.webp",
+    "coverAlt": "Completed red and black L1 rocket with conical nose and laser-cut fins",
+    "coverPosition": "50% 55%",
+    "summary": "Designed and fabricated flight hardware, modeled stability in OpenRocket, and documented the launch.",
+    "lede": "I designed and 3D printed the conical nose cone, laser cut the fins, and 3D printed the motor retainer. I used OpenRocket to compare motor configurations and evaluate stability before launch.",
+    "facts": [["Build", "Printed nose cone and laser-cut fins"], ["Modeled stability", "1.56 calibers · H219T-14"], ["Modeled apogee", "1,517 ft · H219T-14"]],
+    "sections": [
+      ["From CAD to airframe", "The final nose cone used a straight conical profile with a shoulder to locate it in the body tube. I translated the fin profile into laser-cut parts and used a printed motor retainer to secure the motor in the airframe."],
+      ["Stability and simulation", "I compared H-class motor configurations and checked the location of the center of pressure relative to the center of gravity. The static margin expresses that separation in body diameters, or calibers. The figures above are from the H219T-14 simulation and are not measured flight data."]
+    ],
+    "film": {"src":"https://ethan-osuna-engineering.cappednashi.chatgpt.site/assets/l1-launch.mp4", "poster":"l1-launch-poster.webp", "caption":"Ground footage of the L1 launch. Liftoff is about seven seconds into the clip."},
+    "gallery": [
+      ["l1-rocket.webp", "Assembled L1 rocket with its printed conical nose cone and laser-cut fins."],
+      ["l1-nose-cad.webp", "Final conical nose cone CAD model."],
+      ["l1-nose-drawing.webp", "Dimensioned profile of the final nose cone."],
+      ["l1-fins.webp", "Freeform fin geometry modeled in OpenRocket."],
+      ["l1-openrocket.webp", "OpenRocket configurations and predicted performance."]
+    ]
+  },
+  {
+    "slug": "tethered-weather-balloon",
+    "title": "Tethered Weather Balloon",
+    "eyebrow": "Air quality instrumentation",
+    "status": "Prototype built",
+    "date": "Feb – Jun 2026",
+    "categories": ["Aerospace", "Electronics"],
+    "tags": ["KiCad", "Raspberry Pi", "LoRa"],
+    "cover": "balloon-prototype.webp",
+    "coverPosition": "50% 55%",
+    "coverAlt": "Breadboard and sensor wiring assembled inside a black louvered balloon payload enclosure",
+    "summary": "Designed a sensor payload to study air quality at different heights above Mt. SAC, with onboard logging and a LoRa link.",
+    "lede": "I led a team building a tethered balloon payload to profile how air quality changes with height above Mt. San Antonio College in Walnut, California. The project combined mechanical packaging, embedded electronics, and ground operations.",
+    "facts": [["My role", "Team lead and KiCad schematic"], ["Enclosure", "3D printed ASA"], ["Data paths", "Onboard CSV and LoRa telemetry"]],
+    "sections": [
+      ["Payload enclosure", "We chose ASA for outdoor UV and temperature exposure. The enclosure made room for the sensor breadboard, with a louvered panel and a dedicated opening for the LoRa antenna. We estimated balloon lift from payload mass and used the expected loads to evaluate the eye bolt and select a tether within our length and budget limits. A manual winch was planned for recovery."],
+      ["Sensing and logging", "I drew the KiCad schematic for the Pico, Pi Zero 2 W, radio, camera, and sensor connections. The breadboard integrated the BME280, MiCS-6814, MQ-131, and PMS5003 for atmospheric and air quality measurements. Python and MicroPython handled sensor acquisition; the Pi logged readings to a CSV on its SD card. LoRa was intended to send a second copy to the ground if the payload could not be recovered."],
+      ["Field outcome", "The balloon burst during inflation after contact with a hot metal bar, so the payload never flew and we collected no altitude profile. A loose camera ribbon also prevented planned footage. For a repeat attempt, I would isolate the balloon from hot surfaces, secure the camera connector, and verify recording and telemetry on flight power before inflation."]
+    ],
+    "gallery": [
+      ["balloon-prototype.webp", "Prototype · Breadboard, sensor wiring, and camera ribbon inside the printed enclosure."],
+      ["balloon-drawing.webp", "Dimensioned payload enclosure drawing with orthographic and isometric views."],
+      ["balloon-schematic.webp", "KiCad schematic · Flight computers, camera, LoRa radio, and sensor connections."],
+      ["balloon-cad-louvered.webp", "Enclosure CAD · Louvered panel."],
+      ["balloon-cad-front.webp", "Enclosure CAD · Side openings and lid."],
+      ["balloon-cad-interior.webp", "Enclosure CAD · Interior packaging."],
+      ["balloon-inflation.webp", "Field preparation · Team assembling the payload and inflating the tethered balloon."]
+    ]
+  },
+  {
+    "slug": "l2-rocket",
+    "title": "L2 Rocket",
+    "eyebrow": "High-power rocketry",
+    "status": "In progress",
+    "date": "Jun 2026 – present",
+    "categories": ["Aerospace", "Electronics"],
+    "tags": ["OpenRocket", "Avionics", "Dual deployment"],
+    "cover": "l2-layout.webp",
+    "coverMode": "diagram",
+    "coverAlt": "OpenRocket side profile of the L2 rocket showing nose, body tubes, and fins",
+    "summary": "Developing a four-inch high-power airframe with dual deployment and space for onboard instrumentation.",
+    "lede": "I’m designing and building a rocket for Level 2 certification. The project extends my L1 build into recovery electronics, airframe integration, and onboard instrumentation.",
+    "facts": [["Airframe model", "106 in long · 4 in diameter"], ["Recovery", "Dual deployment planned"], ["Design tool", "OpenRocket"]],
+    "sections": [
+      ["Airframe layout", "I’m using OpenRocket to evaluate component placement, center of gravity, and center of pressure. The current layout defines the nose cone, body tubes, couplers, bulkheads, and fin sets. The layout view shows the airframe without a selected motor."],
+      ["Recovery and instrumentation", "The recovery layout uses a drogue in the lower section and a main parachute under the nose, with an electronics bay for deployment control. I’m also planning a compact payload bay for a camera and an accelerometer/gyroscope to examine flight events."]
+    ],
+    "gallery": [
+      ["l2-layout.webp", "Current OpenRocket airframe layout showing the shell, internal sections, and fin sets."]
+    ]
+  },
+  {
+    "slug": "tensile-testing-and-hardness",
+    "title": "Tensile Testing and Hardness",
+    "eyebrow": "Materials testing",
+    "status": "Lab study",
+    "date": "Materials characterization",
+    "categories": ["Manufacturing"],
+    "tags": ["Tensile testing", "Stress–strain", "Rockwell"],
+    "cover": "tensile-fractures.webp",
+    "coverPosition": "50% 47%",
+    "coverAlt": "Rows of polymer and metal specimens showing fractures from tensile testing",
+    "summary": "Compared filleted and square-shouldered specimens across four materials and examined how they deformed and fractured.",
+    "lede": "Our lab team compared the tensile response of PLA, aluminum, galvanized steel, and MagnaCut. Testing both filleted and square-shouldered specimens let us observe the influence of geometry alongside differences between materials.",
+    "facts": [["Tensile materials", "PLA, aluminum, galvanized steel, MagnaCut"], ["Geometries", "Filleted and square-shouldered"], ["Outputs", "Stress–strain curves and fracture photos"]],
+    "sections": [
+      ["Tensile response", "We compared measured stress–strain curves and inspected the specimens after testing for necking and fracture location. The results showed why geometry matters when interpreting a tensile test: a break near a shoulder may tell you as much about the local stress concentration as about the material itself."],
+      ["Hardness comparison", "We also took Rockwell readings on forged, control, and drilled metal coupons. The original lab sheet records the readings and scales. I would verify the scale and repeatability before treating any of those values as a material property."]
+    ],
+    "gallery": [
+      ["tensile-curves.webp", "Stress–strain curves for the tested specimen geometries and materials."],
+      ["tensile-specimens.webp", "Comparison of the filleted and square-shouldered specimen profiles."],
+      ["tensile-fractures.webp", "Post-test specimens showing different fracture locations and deformation."],
+      ["tensile-hardness-notes.webp", "Original hardness lab notes. Readings and scale labels are shown as recorded."]
+    ]
+  },
+  {
+    "slug": "metal-level-1",
+    "title": "METAL Level 1 Manufacturing Workshop",
+    "eyebrow": "Cal Poly Pomona workshop",
+    "status": "Workshop completed",
+    "date": "Cal Poly Pomona",
+    "categories": ["Manufacturing"],
+    "tags": ["CNC milling", "Casting", "TTT diagrams"],
+    "cover": "workshop-mill.webp",
+    "coverPosition": "50% 44%",
+    "coverAlt": "Haas Mini Mill with a workpiece held in a vise and an overhead view of the tooling",
+    "summary": "Hands-on CNC machining, casting, and steel heat treatment, with an emphasis on connecting the process to the final part.",
+    "lede": "At Cal Poly Pomona’s METAL Level 1 workshop, I practiced casting, CNC machining, and steel heat treatment. Working across the three processes made it easier to see how upstream choices affect the part you get at the end.",
+    "facts": [["Digital tools", "Fusion 360 and FLOW-3D CAST"], ["Shop work", "Casting and CNC milling"], ["Materials", "Heat-treated steel coupons"]],
+    "sections": [
+      ["Casting and machining", "I used Fusion 360 for modeling and FLOW-3D CAST to look for potential shrinkage defects. We made parts using sand and lost-foam casting, including a small engine model. For CNC work, I generated G-code and helped machine a cast model car."],
+      ["Heat treatment trade-offs", "We used time–temperature–transformation diagrams to reason about how thermal history changes steel microstructure. We then secured heat-treated coupons in a vise to compare their behavior. The exercise made the trade-off tangible: hardness helps resist indentation and wear, while ductility and toughness matter when a part must deform or absorb energy before fracturing."]
+    ],
+    "gallery": [
+      ["workshop-mill.webp", "CNC workshop · Haas mill, workholding, and operator controls."],
+      ["workshop-foundry.webp", "Foundry workshop · Casting setup and parts."],
+      ["workshop-coupons.webp", "Steel coupons used to compare heat treatment outcomes."]
+    ]
+  }
+]
