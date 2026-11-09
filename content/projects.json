@@ -162,22 +162,72 @@
     "eyebrow": "Cal Poly Pomona workshop",
     "status": "Workshop completed",
     "date": "Cal Poly Pomona",
-    "categories": ["Manufacturing"],
-    "tags": ["CNC milling", "Casting", "TTT diagrams"],
+    "categories": [
+      "Manufacturing"
+    ],
+    "tags": [
+      "CNC milling",
+      "Casting",
+      "TTT diagrams"
+    ],
     "cover": "workshop-mill.webp",
     "coverPosition": "50% 44%",
-    "coverAlt": "Haas Mini Mill with a workpiece held in a vise and an overhead view of the tooling",
-    "summary": "Hands-on CNC machining, casting, and steel heat treatment, with an emphasis on connecting the process to the final part.",
-    "lede": "At Cal Poly Pomona’s METAL Level 1 workshop, I practiced casting, CNC machining, and steel heat treatment. Working across the three processes made it easier to see how upstream choices affect the part you get at the end.",
-    "facts": [["Digital tools", "Fusion 360 and FLOW-3D CAST"], ["Shop work", "Casting and CNC milling"], ["Materials", "Heat-treated steel coupons"]],
+    "coverAlt": "Haas Mini Mill CNC machining the cast aluminum truck to remove excess material and surface imperfections",
+    "summary": "Hands-on aluminum casting, lathe work, CNC milling, and steel heat treatment, with a focus on designing for manufacturability.",
+    "lede": "At Cal Poly Pomona’s METAL Level 1 workshop, I made aluminum parts using green sand and lost foam casting, then practiced lathe work, CNC milling, and steel heat treatment. Taking designs from CAD through casting and finishing helped me understand manufacturing processes and the importance of designing for manufacturability.",
+    "facts": [
+      [
+        "Digital tools",
+        "Fusion 360 and FLOW-3D CAST"
+      ],
+      [
+        "Shop work",
+        "Casting, lathe work, and CNC milling"
+      ],
+      [
+        "Materials",
+        "Cast aluminum and heat-treated steel"
+      ]
+    ],
     "sections": [
-      ["Casting and machining", "I used Fusion 360 for modeling and FLOW-3D CAST to look for potential shrinkage defects. We made parts using sand and lost-foam casting, including a small engine model. For CNC work, I generated G-code and helped machine a cast model car."],
-      ["Heat treatment trade-offs", "We used time–temperature–transformation diagrams to reason about how thermal history changes steel microstructure. We then secured heat-treated coupons in a vise to compare their behavior. The exercise made the trade-off tangible: hardness helps resist indentation and wear, while ductility and toughness matter when a part must deform or absorb energy before fracturing."]
+      [
+        "Green sand casting and machining",
+        "We poured molten aluminum into a green sand mold to create the truck body, turned its wheels on a lathe, and CNC milled the casting on a Haas Mini Mill to remove excess material and surface imperfections. Working through casting and machining showed me how the initial shape and finishing operations work together to produce the completed part."
+      ],
+      [
+        "Lost foam casting",
+        "We modeled the horse in CAD and made foam patterns from the design. The patterns were packed in sand and replaced by molten aluminum during pouring to form the horse casting. I also used Fusion 360 for modeling and FLOW-3D CAST to look for potential shrinkage defects."
+      ],
+      [
+        "Designing for manufacturability",
+        "Making both aluminum castings helped me connect design decisions to the manufacturing process. I learned to consider how a shape will be cast, which surfaces will need machining, and how the part can be held and reached by the tools. The experience reinforced the importance of planning fabrication and finishing while developing the design."
+      ],
+      [
+        "Heat treatment trade-offs",
+        "We used time–temperature–transformation diagrams to reason about how thermal history changes steel microstructure. We then secured heat-treated coupons in a vise to compare their behavior. The exercise made the trade-off tangible: hardness helps resist indentation and wear, while ductility and toughness matter when a part must deform or absorb energy before fracturing."
+      ]
     ],
     "gallery": [
-      ["workshop-mill.webp", "CNC workshop · Haas mill, workholding, and operator controls."],
-      ["workshop-foundry.webp", "Foundry workshop · Casting setup and parts."],
-      ["workshop-coupons.webp", "Steel coupons used to compare heat treatment outcomes."]
+      [
+        "workshop-aluminum-truck.webp",
+        "Green sand cast aluminum truck · The body was cast from molten aluminum, the wheels were turned on a lathe, and the casting was CNC milled to remove excess material and surface imperfections."
+      ],
+      [
+        "workshop-lost-foam-horse.webp",
+        "Lost foam cast aluminum horse · We modeled the horse in CAD, made foam patterns, and packed them in sand before pouring molten aluminum to form the casting."
+      ],
+      [
+        "workshop-mill.webp",
+        "Haas Mini Mill · CNC milling the cast aluminum truck to remove excess material and surface imperfections from the casting."
+      ],
+      [
+        "workshop-foundry.webp",
+        "Foundry workshop · Casting setup and parts."
+      ],
+      [
+        "workshop-coupons.webp",
+        "Steel coupons used to compare heat treatment outcomes."
+      ]
     ]
   }
 ]
